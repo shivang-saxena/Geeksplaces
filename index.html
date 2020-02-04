@@ -12,6 +12,49 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/BS4-Header-with-video.css">
   <style>
+    .counter
+{
+    background-color: #ffffff;
+    text-align: center;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #00b3e7;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.employee-p,.customer-p,.order-p,.design-p
+{
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+    .bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
   .map-responsive{
     overflow:hidden;
     padding-bottom:50%;
@@ -75,33 +118,19 @@
       </div>
     </div> 
     </nav>   
-    <div class="overlay">
-      <video width="560" height="315" preload="auto" controls autoplay="" loop=""><source src="images/video/vid3.mp4" type="video/mp4"></video>
-      <div class="video" playsinline="playsinline" autoplay="autoplay" muted="muted"
-          loop="loop">
-         
-      </div>
-  </div>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="images/video/vid3.mp4" type="video/mp4">
+    </video>
   <div class="container h-100">
       <div class="d-flex text-center h-100">
           <div class="my-auto w-100 text-white">
               <h1 class="display-2">Geeks Place</h1>
-              <h2>Redefining the traditional teaching sessions with more interactive ad loving tutoring sessions<br></h2>
+              <h2>Redefining the traditional teaching sessions with more interactive and loving tutoring sessions<br></h2>
           </div>
       </div>
   </div>
   </header>
-  <!-- <div class="banner" >
-    <div class="container">
-      <h1 class="font-weight-semibold">Search engine optimisation &<br>Marketing.</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Simple is a simple template with a creative design that solves all your marketing and SEO queries.</h6>
-      <div>
-        <button class="btn btn-opacity-light mr-1">Get started</button>
-        <button class="btn btn-opacity-success ml-1">Learn more</button>
-      </div>
-      <img src="images/Group171.svg" alt="" class="img-fluid">
-    </div>
-  </div> -->
   <div class="content-wrapper">
     <div class="container">
       <section class="features-overview" id="features-section" >
@@ -149,6 +178,8 @@
         </div>
        
       </section>
+    </div>
+    <div class="container">
       <hr>
       <section class="features-overview" id="features-section" >
         <div class="content-header">
@@ -244,6 +275,44 @@
         </div>
       </section>   
       <hr>
+      <div class="counter">
+        <div class="container">
+          <div class="content-header" style="text-align: center;">
+            <h2>Statistics </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="employees">
+                        <p class="counter-count">72</p>
+                        <p class="employee-p">Students Enrolled</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="customer">
+                        <p class="counter-count">379</p>
+                        <p class="customer-p">Sessions Conducted</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="design">
+                        <p class="counter-count">30</p>
+                        <p class="design-p">Jobs Created</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="order">
+                        <p class="counter-count">2</p>
+                        <p class="order-p">Cities Conquered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
       <section class="customer-feedback" id="feedback-section">
         <div class="row">
           <div class="col-12 text-center pb-5">
@@ -394,102 +463,71 @@
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face1.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">I’m totally Happy with Geeks' place of teaching. My Child is now totally focussed on studying the way they teach.
+                    </p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Ashok Chauhan </h6>
+                    <h6 class="customer-designation text-muted m-0">Daffodil Hr. Sec. School</h6>
                   </div>
                 </div>
               </div>
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face2.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">The way of teaching is very impressive. My Child now grasps every topic very easily.</p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Amit Ahirwar</h6>
+                    <h6 class="customer-designation text-muted m-0">Anand Vidya Mandir</h6>
                   </div>
                 </div>
               </div>
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face3.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">Tutors they send are very humble, my child loves the way they teach.</p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Amit Raghuvanshi</h6>
+                    <h6 class="customer-designation text-muted m-0">Sagar Public School</h6>
                   </div>
                 </div>
               </div>
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face3.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">I saw an improvement in his drawing and arts and also their analyst provides the overall progress growth of my child.</p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Anupama Das</h6>
+                    <h6 class="customer-designation text-muted m-0">Army Public School</h6>
                   </div>
                 </div>
               </div>
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face2.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">I do not have worries now as my child is doing in his studies as their analyst visits every week with a overall progress growth charts of my child and also their way of teaching is very unique.</p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Ranjana Chaurasia</h6>
+                    <h6 class="customer-designation text-muted m-0">Sagar Public School</h6>
                   </div>
                 </div>
               </div>
               <div class="card customer-cards">
                 <div class="card-body">
                   <div class="text-center">
-                    <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                    <img src="images/face3.jpeg" width="89" height="89" alt="" class="img-customer">
+                    <p class="m-0 py-3 text-muted">I totally find it very good and saw an improvement in my child’s study as their weekly and monthly test series helps her a lot to improve in her academics.</p>
                     <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
+                    <h6 class="card-title pt-3">Pradeep Singh</h6>
+                    <h6 class="customer-designation text-muted m-0">Anand Vihar School</h6>
                   </div>
                 </div>
               </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Tony Martinez</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Sophia Armstrong</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card customer-cards">
-                <div class="card-body">
-                  <div class="text-center">
-                    <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
-                    <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                    <div class="content-divider m-auto"></div>
-                    <h6 class="card-title pt-3">Cody Lambert</h6>
-                    <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
-                  </div>
-                </div>
-              </div>
+            
           </div>
         </div>
       </section>
@@ -499,7 +537,9 @@
             <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Payment Gateway</h4>
           </div>
           <div data-aos="fade-up">
-            <button class="btn btn-rounded btn-outline-danger">Pay Now</button>
+            <!-- <a class="btn btn-rounded" href="https://www.instamojo.com/@geeksplace/" rel="im-checkout" data-text="Pay" data-css-style="color:#ffffff; background:#75c26a; width:300px; border-radius:4px"   data-layout="vertical"></a> -->
+
+            <button class="btn btn-rounded btn-outline-danger" onclick="window.location.href = 'https://www.instamojo.com/@geeksplace'" rel="im-checkout">Pay Now</button>
           </div>          
         </div>
       </section>
@@ -520,7 +560,7 @@
             <p>GeekPlaces</p>
             <div class="pt-2">
               <p class="text-muted m-0">rajakash0799@gmail.com</p>
-              <p class="text-muted m-0">+91 - 9990507796</p>
+              <p class="text-muted m-0">+91 - 8269696745 <br> 0755-359379</p>
             </div> 
             <br><br> 
             <div class="d-flex justify-content-center justify-content-md-start">
@@ -549,7 +589,11 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Our address</h5>
-              <p class="text-muted">Mp Nagar<br>Bhopal</p>
+              <p class="text-muted"><b>Bhopal - </b>Dylogg First Floor, B 66, Chetak Bridge, Gautam Nagar, Housing Board Colony, Kasturba Nagar, Bhopal, Madhya Pradesh 462023
+              <br>
+              <b>Delhi NCR- </b>Saket Dham Apartments, Block D, Sector 61, Noida, Uttar Pradesh 201301
+
+            </p>
                 <div class="map-responsive">
                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
@@ -557,7 +601,7 @@
         </div>  
       </section>
       <footer class="border-top">
-        <p class="text-center text-muted pt-4">Copyright © 2020<a href="#" class="px-1"></a>All rights reserved.</p>
+        <p class="text-center text-muted pt-4">Copyright © 2020 <a href="#" class="px-1"></a>All rights reserved.</p>
       </footer>
       <!-- Modal for Contact - us Button -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -596,5 +640,19 @@
   <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
   <script src="vendors/aos/js/aos.js"></script>
   <script src="js/landingpage.js"></script>
+  <script src="https://js.instamojo.com/v1/button.js"></script>
+  <script>
+  $('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+  </script>
 </body>
 </html>
