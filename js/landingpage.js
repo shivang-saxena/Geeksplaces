@@ -1,3 +1,18 @@
+// Statics Counter 
+
+$('.counter-count').each(function () {
+  $(this).prop('Counter',0).animate({
+    Counter: $(this).text()
+}, {
+    duration: 5000,
+    easing: 'swing',
+    step: function (now) {
+        $(this).text(Math.ceil(now));
+    }
+});
+});
+
+
 // HEADER ANIMATION
 window.onscroll = function() {scrollFunction()};
 var element = document.getElementById("body");
@@ -7,7 +22,7 @@ function scrollFunction() {
       element.classList.add("header-small");
       $("body").addClass("body-top-padding");
 
-  } else {
+  }else {
       $(".navbar").removeClass("fixed-top");
       element.classList.remove("header-small");
       $("body").removeClass("body-top-padding");
