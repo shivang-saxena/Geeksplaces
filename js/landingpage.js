@@ -92,6 +92,7 @@ AOS.init({
     var w = window.innerWidth;
     if(w>=992) {
       $('body').removeClass('sidebar-open');
+      element.classList.add("header-small");
       $('#navbarSupportedContent').removeClass('show');
     }
   }
